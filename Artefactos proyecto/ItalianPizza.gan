@@ -1,0 +1,1282 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Italian Pizza" company="" webLink="http://" view-date="2022-02-01" view-index="0" gantt-divider-location="663" resource-divider-location="446" version="3.2.3221" locale="es_ES">
+    <description/>
+    <view zooming-state="default:8" id="gantt-chart">
+        <field id="tpc0" name="ID Tarea" width="71" order="0"/>
+        <field id="tpd3" name="Nombre" width="146" order="1"/>
+        <field id="tpd4" name="Fecha de inicio" width="102" order="2"/>
+        <field id="tpd5" name="Fecha de fin" width="87" order="3"/>
+        <field id="tpd6" name="Duración" width="78" order="4"/>
+        <field id="tpd13" name="Recursos" width="109" order="5"/>
+        <field id="tpc1" name="Horas" width="54" order="6"/>
+        <option id="filter.completedTasks" value="true"/>
+        <option id="color.recent">
+            <![CDATA[#000000]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nombre" width="273" order="0"/>
+        <field id="1" name="Función" width="154" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="true"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+            <taskproperty id="tpc0" name="ID Tarea" type="custom" valuetype="text" defaultvalue=""/>
+            <taskproperty id="tpc1" name="Horas" type="custom" valuetype="text" defaultvalue="2"/>
+        </taskproperties>
+        <task id="0" name="Planeación" color="#000000" meeting="false" start="2022-03-08" duration="11" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+            <customproperty taskproperty-id="tpc1" value="   "/>
+            <task id="2" name="Generar EDT" color="#8cb6ce" meeting="false" start="2022-03-08" duration="6" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <depend id="3" type="2" difference="0" hardness="Strong"/>
+                <customproperty taskproperty-id="tpc0" value="TAR-01"/>
+                <customproperty taskproperty-id="tpc1" value=" 3"/>
+            </task>
+            <task id="3" name="Generar cronograma" color="#8cb6ce" meeting="false" start="2022-03-14" duration="5" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc0" value="TAR-02"/>
+                <customproperty taskproperty-id="tpc1" value=" 3"/>
+            </task>
+        </task>
+        <task id="4" name="Modelos de requisitos" color="#000000" meeting="false" start="2022-03-18" duration="12" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+            <customproperty taskproperty-id="tpc1" value=""/>
+            <task id="5" name="Modelo de dominio" color="#8cb6ce" meeting="false" start="2022-03-18" duration="3" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <depend id="8" type="2" difference="0" hardness="Strong"/>
+                <customproperty taskproperty-id="tpc0" value="TAR-03"/>
+            </task>
+            <task id="6" name="Diagrama de paquetes" color="#8cb6ce" meeting="false" start="2022-03-20" duration="2" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <depend id="7" type="2" difference="0" hardness="Strong"/>
+                <customproperty taskproperty-id="tpc0" value="TAR-04"/>
+                <customproperty taskproperty-id="tpc1" value="1"/>
+            </task>
+            <task id="7" name="Diagramas de caso de uso por paquetes" color="#8cb6ce" meeting="false" start="2022-03-22" duration="2" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc0" value="TAR-05"/>
+            </task>
+            <task id="8" name="Diagramas de clases del modelo de dominio" color="#8cb6ce" meeting="false" start="2022-03-21" duration="5" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc0" value="TAR-06"/>
+                <customproperty taskproperty-id="tpc1" value="4"/>
+            </task>
+            <task id="9" name="Modelo de datos" color="#8cb6ce" meeting="false" start="2022-03-25" duration="5" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc0" value="TAR-07"/>
+                <customproperty taskproperty-id="tpc1" value="4"/>
+            </task>
+        </task>
+        <task id="494" name="Paquete empleados" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-16" thirdDate-constraint="0" expand="false">
+            <customproperty taskproperty-id="tpc1" value=""/>
+            <task id="10" name="CU-01: Consultar empleado" color="#8cb6ce" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc0" value=""/>
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="50" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="51" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-08"/>
+                </task>
+                <task id="51" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="52" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-09"/>
+                </task>
+                <task id="52" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="53" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-10"/>
+                </task>
+                <task id="53" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="54" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-11"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="54" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="55" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-12"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="55" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value="TAR-13"/>
+                    <customproperty taskproperty-id="tpc1" value="2"/>
+                </task>
+            </task>
+            <task id="12" name="CU-02: Registrar empleado" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="57" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="59" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-14"/>
+                </task>
+                <task id="59" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="61" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-15"/>
+                </task>
+                <task id="61" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="63" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-16"/>
+                </task>
+                <task id="63" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="65" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-17"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="65" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="67" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-18"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="67" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value="TAR-19"/>
+                </task>
+            </task>
+            <task id="13" name="CU-03: Actualizar empleado" color="#8cb6ce" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="75" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="77" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-20"/>
+                </task>
+                <task id="77" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="79" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-21"/>
+                </task>
+                <task id="79" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="81" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-22"/>
+                </task>
+                <task id="81" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="83" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-23"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="83" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="85" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-24"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="85" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value="TAR-25"/>
+                </task>
+            </task>
+            <task id="15" name="CU-04: Eliminar empleado" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="93" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="95" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-26"/>
+                </task>
+                <task id="95" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="97" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-27"/>
+                </task>
+                <task id="97" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="99" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-28"/>
+                </task>
+                <task id="99" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="101" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-29"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="101" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="103" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-30"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="103" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value="TAR-31"/>
+                </task>
+            </task>
+        </task>
+        <task id="495" name="Paquete clientes" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="false">
+            <customproperty taskproperty-id="tpc1" value=""/>
+            <task id="16" name="CU-05: Consultar cliente" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="114" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="116" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-32"/>
+                </task>
+                <task id="116" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="118" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-33"/>
+                </task>
+                <task id="118" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="120" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-34"/>
+                </task>
+                <task id="120" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="122" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-35"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="122" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="124" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-36"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="124" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value="TAR-37"/>
+                </task>
+            </task>
+            <task id="17" name="CU-06: Registrar cliente" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="132" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="134" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-38"/>
+                </task>
+                <task id="134" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="136" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-39"/>
+                </task>
+                <task id="136" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="138" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-40"/>
+                </task>
+                <task id="138" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="140" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-41"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="140" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="142" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-42"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="142" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value="TAR-43"/>
+                </task>
+            </task>
+            <task id="18" name="CU-07: Actualizar cliente" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="150" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="152" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-44"/>
+                </task>
+                <task id="152" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="154" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-45"/>
+                </task>
+                <task id="154" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="156" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-46"/>
+                </task>
+                <task id="156" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="158" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-47"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="158" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="160" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-48"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="160" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value="TAR-49"/>
+                </task>
+            </task>
+            <task id="19" name="CU-08: Eliminar cliente" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="168" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="170" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-50"/>
+                </task>
+                <task id="170" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="172" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-51"/>
+                </task>
+                <task id="172" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="174" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-52"/>
+                </task>
+                <task id="174" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="176" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-53"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="176" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="178" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-54"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="178" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value="TAR-55"/>
+                </task>
+            </task>
+        </task>
+        <task id="496" name="Paquete productos" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-16" thirdDate-constraint="0" expand="false">
+            <customproperty taskproperty-id="tpc1" value=""/>
+            <task id="20" name="CU-09: Consultar inventario" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="180" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="182" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="TAR-56"/>
+                </task>
+                <task id="182" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="184" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-57"/>
+                </task>
+                <task id="184" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="186" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-58"/>
+                </task>
+                <task id="186" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="188" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-59"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="188" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="190" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-60"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="190" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value=" TAR-61"/>
+                </task>
+            </task>
+            <task id="21" name="CU-10: Registrar producto" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="192" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="194" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-62"/>
+                </task>
+                <task id="194" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="196" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-63"/>
+                </task>
+                <task id="196" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="198" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-64"/>
+                </task>
+                <task id="198" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="200" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-65"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="200" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="202" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-66"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="202" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value=" TAR-67"/>
+                </task>
+            </task>
+            <task id="22" name="CU-11: Actualizar producto" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="204" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="206" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-68"/>
+                </task>
+                <task id="206" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="208" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-69"/>
+                </task>
+                <task id="208" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="210" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-70"/>
+                </task>
+                <task id="210" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="212" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-71"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="212" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="214" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-72"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="214" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value=" TAR-73"/>
+                </task>
+            </task>
+            <task id="23" name="CU-12: Eliminar producto" color="#8cb6ce" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="217" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="219" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-74"/>
+                </task>
+                <task id="219" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="221" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-75"/>
+                </task>
+                <task id="221" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="223" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-76"/>
+                </task>
+                <task id="223" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="225" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-77"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="225" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="227" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-78"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="227" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value=" TAR-79"/>
+                </task>
+            </task>
+            <task id="25" name="CU-13: Validar inventario" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="229" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="231" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-80"/>
+                </task>
+                <task id="231" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="233" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-81"/>
+                </task>
+                <task id="233" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="235" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-82"/>
+                </task>
+                <task id="235" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="237" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-83"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="237" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="239" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-84"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="239" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value=" TAR-85"/>
+                </task>
+            </task>
+        </task>
+        <task id="497" name="Paquete pedidos" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="false">
+            <customproperty taskproperty-id="tpc1" value=""/>
+            <task id="26" name="CU-14: Consultar pedido" color="#8cb6ce" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="241" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="243" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-86"/>
+                </task>
+                <task id="243" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="245" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-87"/>
+                </task>
+                <task id="245" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="247" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-88"/>
+                </task>
+                <task id="247" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="249" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-89"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="249" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="251" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-90"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="251" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value=" TAR-91"/>
+                </task>
+            </task>
+            <task id="28" name="CU-15: Registar pedido" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="253" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="255" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-92"/>
+                </task>
+                <task id="255" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="257" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-93"/>
+                </task>
+                <task id="257" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="259" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-94"/>
+                </task>
+                <task id="259" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="261" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-95"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="261" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="263" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-96"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="263" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value=" TAR-97"/>
+                </task>
+            </task>
+            <task id="29" name="CU-16: Actualizar pedido en espera" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="265" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="267" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-98"/>
+                </task>
+                <task id="267" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="269" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-99"/>
+                </task>
+                <task id="269" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="271" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-100"/>
+                </task>
+                <task id="271" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="273" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-101"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="273" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="275" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-102"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="275" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value=" TAR-103"/>
+                </task>
+            </task>
+            <task id="30" name="CU-17: Cancelar pedido en espera" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="277" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="279" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-104"/>
+                </task>
+                <task id="279" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="281" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-105"/>
+                </task>
+                <task id="281" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="283" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-106"/>
+                </task>
+                <task id="283" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="285" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-107"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="285" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="287" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-108"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="287" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value=" TAR-109"/>
+                </task>
+            </task>
+        </task>
+        <task id="498" name="Paquete cocina" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="false">
+            <customproperty taskproperty-id="tpc1" value=""/>
+            <task id="31" name="CU-18: Consultar receta de platillo" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="289" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="291" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-110"/>
+                </task>
+                <task id="291" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="293" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-111"/>
+                </task>
+                <task id="293" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="295" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-112"/>
+                </task>
+                <task id="295" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="297" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-113"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="297" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="299" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-114"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="299" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value=" TAR-115"/>
+                </task>
+            </task>
+            <task id="32" name="CU-19: Registrar receta de platillo" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="301" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="303" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-116"/>
+                </task>
+                <task id="303" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="305" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-117"/>
+                </task>
+                <task id="305" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="307" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-118"/>
+                </task>
+                <task id="307" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="309" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-119"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="309" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="311" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-120"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="311" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value=" TAR-121"/>
+                </task>
+            </task>
+            <task id="33" name="CU-20: Actualizar receta de platillo" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="313" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="315" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-122"/>
+                </task>
+                <task id="315" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="317" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-123"/>
+                </task>
+                <task id="317" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="319" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-124"/>
+                </task>
+                <task id="319" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="321" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-125"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="321" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="323" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-126"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="323" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value=" TAR-127"/>
+                </task>
+            </task>
+            <task id="34" name="CU-21: Eliminar receta de platillo" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="325" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="327" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-128"/>
+                </task>
+                <task id="327" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="329" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-129"/>
+                </task>
+                <task id="329" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="331" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-130"/>
+                </task>
+                <task id="331" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="333" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-131"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="333" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="335" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-132"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="335" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value=" TAR-133"/>
+                </task>
+            </task>
+        </task>
+        <task id="499" name="Paquete proveedor" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="false">
+            <customproperty taskproperty-id="tpc1" value=""/>
+            <task id="35" name="CU-22: Consultar proveedor" color="#8cb6ce" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="337" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="339" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-134"/>
+                </task>
+                <task id="339" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="341" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-135"/>
+                </task>
+                <task id="341" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="343" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-136"/>
+                </task>
+                <task id="343" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="345" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-137"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="345" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="347" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-138"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="347" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value=" TAR-139"/>
+                </task>
+            </task>
+            <task id="37" name="CU-23: Registrar proveedor" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="349" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="351" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-140"/>
+                </task>
+                <task id="351" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="353" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-141"/>
+                </task>
+                <task id="353" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="355" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-142"/>
+                </task>
+                <task id="355" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="357" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-143"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="357" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="359" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-144"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="359" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value=" TAR-145"/>
+                </task>
+            </task>
+            <task id="39" name="CU-24: Actualizar proveedor" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="361" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="363" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-146"/>
+                </task>
+                <task id="363" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="365" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-147"/>
+                </task>
+                <task id="365" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="367" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-148"/>
+                </task>
+                <task id="367" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="369" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-149"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="369" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="371" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-150"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="371" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value=" TAR-151"/>
+                </task>
+            </task>
+            <task id="40" name="CU-25: Eliminar proveedor" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="373" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="375" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-152"/>
+                </task>
+                <task id="375" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="377" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-153"/>
+                </task>
+                <task id="377" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="379" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-154"/>
+                </task>
+                <task id="379" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="381" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-155"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="381" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="383" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-156"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="383" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value=" TAR-157"/>
+                </task>
+            </task>
+        </task>
+        <task id="500" name="Paquete finanzas" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="false">
+            <customproperty taskproperty-id="tpc1" value=""/>
+            <task id="41" name="CU-26: Consultar pedido a proveedor" color="#8cb6ce" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="385" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="387" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-158"/>
+                </task>
+                <task id="387" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="389" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-159"/>
+                </task>
+                <task id="389" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="391" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-160"/>
+                </task>
+                <task id="391" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="393" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-161"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="393" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="395" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-162"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="395" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value=" TAR-163"/>
+                </task>
+            </task>
+            <task id="42" name="CU-27: Registrar pedido a proveedor" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="397" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="399" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-164"/>
+                </task>
+                <task id="399" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="401" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-165"/>
+                </task>
+                <task id="401" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="403" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-166"/>
+                </task>
+                <task id="403" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="405" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-167"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="405" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="407" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-168"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="407" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value=" TAR-169"/>
+                </task>
+            </task>
+            <task id="44" name="CU-28: Actualizar pedido a proveedor" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="409" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="411" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-170"/>
+                </task>
+                <task id="411" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="413" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-171"/>
+                </task>
+                <task id="413" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="415" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-172"/>
+                </task>
+                <task id="415" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="417" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-173"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="417" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="419" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-174"/>
+                    <customproperty taskproperty-id="tpc1" value="35"/>
+                </task>
+                <task id="419" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value=" TAR-175"/>
+                </task>
+            </task>
+            <task id="45" name="CU-29: Cancelar pedido a proveedor" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="421" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="423" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-176"/>
+                </task>
+                <task id="423" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="425" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-177"/>
+                </task>
+                <task id="425" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="427" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-178"/>
+                </task>
+                <task id="427" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="429" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-179"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="429" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="431" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-180"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="431" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value=" TAR-181"/>
+                </task>
+            </task>
+            <task id="46" name="CU-30: Registrar gasto monetario" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="433" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="435" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-182"/>
+                </task>
+                <task id="435" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="437" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-183"/>
+                </task>
+                <task id="437" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="439" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-184"/>
+                </task>
+                <task id="439" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="441" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-185"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="441" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="443" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-186"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="443" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value=" TAR-187"/>
+                </task>
+            </task>
+            <task id="47" name="CU-31: Consultar gasto monetario" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="445" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="447" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-188"/>
+                </task>
+                <task id="447" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="449" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-189"/>
+                </task>
+                <task id="449" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="451" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-190"/>
+                </task>
+                <task id="451" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="453" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-191"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="453" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="455" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-192"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="455" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value=" TAR-193"/>
+                </task>
+            </task>
+            <task id="48" name="CU-32: Realizar balance diario" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="457" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="459" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-194"/>
+                </task>
+                <task id="459" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="461" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-195"/>
+                </task>
+                <task id="461" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="463" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-196"/>
+                </task>
+                <task id="463" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="465" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-197"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="465" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="467" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-198"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="467" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value=" TAR-199"/>
+                </task>
+            </task>
+            <task id="49" name="CU-33: Consultar balance diario" color="#000000" meeting="false" start="2022-03-30" duration="65" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                <customproperty taskproperty-id="tpc1" value=""/>
+                <task id="469" name="Descripción y prototipo" color="#8cb6ce" meeting="false" start="2022-03-30" duration="60" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="471" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-200"/>
+                </task>
+                <task id="471" name="Diagrama de robustez" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="473" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-201"/>
+                </task>
+                <task id="473" name="Diagrama de secuencia" color="#8cb6ce" meeting="false" start="2022-05-30" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="475" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-202"/>
+                </task>
+                <task id="475" name="Codificación" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="477" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-203"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="477" name="Pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-01" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <depend id="479" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value=" TAR-204"/>
+                    <customproperty taskproperty-id="tpc1" value="3"/>
+                </task>
+                <task id="479" name="Ejecución de pruebas unitarias" color="#8cb6ce" meeting="false" start="2022-06-02" duration="1" complete="0" thirdDate="2022-03-18" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value=" TAR-205"/>
+                </task>
+            </task>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Javier Alberto Calderón Blas" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="1" name="José Daniel Camarillo Villa" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="2" name="Antonio de Jesús Domínguez García" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="3" name="Rubén Isaí Alejo Barrientos" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="4" name="Equipo completo" function="SoftwareDevelopment:2" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="10" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="50" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="51" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="52" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="53" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="54" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="55" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="63" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="114" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="154" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="156" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="134" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="12" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="136" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="77" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="178" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="150" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="15" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="138" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="142" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="176" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="120" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="118" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="19" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="79" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="65" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="160" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="124" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="59" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="67" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="140" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="168" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="61" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="170" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="81" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="103" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="158" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="83" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="75" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="132" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="95" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="57" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="93" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="99" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="122" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="97" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="101" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="172" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="174" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="116" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="18" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="85" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="152" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="433" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="447" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="453" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="443" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="451" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="46" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="441" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="439" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="435" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="449" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="437" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="445" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="47" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="455" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="251" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="279" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="313" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="281" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="275" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="245" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="243" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="285" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="315" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="325" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="329" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="319" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="273" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="333" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="28" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="323" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="255" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="29" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="301" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="247" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="249" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="331" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="287" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="297" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="267" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="303" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="31" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="265" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="295" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="253" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="269" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="30" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="327" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="299" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="261" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="307" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="33" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="305" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="283" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="241" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="263" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="311" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="34" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="317" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="335" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="321" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="32" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="271" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="26" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="293" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="277" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="289" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="257" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="259" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="309" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="291" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="473" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="475" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="477" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="49" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="479" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="48" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="469" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="459" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="457" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="461" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="467" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="465" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="463" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="471" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="208" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="227" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="180" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="212" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="194" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="198" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="23" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="21" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="186" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="233" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="217" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="188" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="190" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="219" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="231" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="237" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="182" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="221" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="184" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="229" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="225" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="192" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="196" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="223" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="20" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="239" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="204" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="200" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="206" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="235" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="210" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="214" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="202" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="25" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="44" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="411" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="399" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="417" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="413" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="409" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="407" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="415" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="419" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="405" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="397" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="401" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="42" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="403" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="363" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="373" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="361" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="381" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="357" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="365" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="383" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="41" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="385" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="351" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="387" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="343" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="353" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="371" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="379" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="341" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="359" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="339" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="39" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="337" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="377" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="355" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="369" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="367" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="40" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="349" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="393" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="35" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="37" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="347" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="395" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="391" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="345" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="389" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="375" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="429" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="431" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="421" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="423" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="45" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="427" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="425" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="4" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="3" resource-id="4" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="4" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="9" resource-id="4" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="8" resource-id="4" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="4" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="6" resource-id="4" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="4" resource-id="4" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="4" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
